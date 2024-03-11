@@ -1,9 +1,91 @@
-@import url("./variables.css");
-@import url("./responsive.css");
+@import url('./variables.css');
+@import url('./fonts.css');
+@import url('./responsive.css');
 
 * {
   margin: 0;
   padding: 0;
   outline: 0;
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: var(--BG);
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*^ Buttons */
+
+/** Buttons styles **/
+button {
+  color: var(--text);
+  background-color: var(--button2);
+  padding: 16px 3rem;
+
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 4px;
+  line-height: 150%;
+  border: 0;
+  cursor: pointer;
+}
+
+.all-products-btn.white {
+  color: var(--text2);
+  background-color: var(--primary);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+.add-cart-btn {
+  padding: 10px 3rem;
+}
+
+/** Buttons hover **/
+
+button:hover {
+  background-color: var(--Hover-Button);
+}
+
+.all-products-btn.white:hover {
+  color: var(--text1);
+}
+
+/*^ Category items */
+
+/** Category items styles **/
+
+.category-item {
+  width: 170px;
+  height: 145px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+.category-item .category {
+  font-size: 1rem;
+  color: var(--text2);
+  line-height: 150%;
+}
+
+.category-item:hover {
+  border: 0;
+  background-color: var(--secondary2);
+  box-shadow: 0px 1px 13px 0px rgba(0, 0, 0, 0.05);
+}
+
+.category-item:hover .category {
+  color: var(--primary);
+}
+
+.category-item:hover img {
+  filter: invert(100%) sepia(64%) saturate(0%) hue-rotate(187deg) brightness(116%) contrast(101%);
 }
