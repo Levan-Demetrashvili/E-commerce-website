@@ -13,10 +13,112 @@
 body {
   background-color: var(--BG);
   height: 100vh;
+}
 
+.padding-x {
+  padding-inline: 135px;
+}
+
+/*^ header styles */
+
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+/** Top header **/
+
+.top-header-mask {
+  padding: 12px 0;
+  width: 100%;
+  background-color: var(--card);
+}
+
+header .top-header {
+  width: 859px;
+  margin-left: calc(100% - 859px - 136px);
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+}
+
+.top-header .sale-text {
+  font-size: 14px;
+  line-height: 150%;
+  color: var(--text);
+}
+
+.sale-text a {
+  margin-left: 8px;
+  color: var(--text);
+  font-weight: 600;
+}
+
+.top-header select {
+  width: 78px;
+  background-image: url('../assets/icons/DropDown.svg');
+  background-repeat: no-repeat;
+  background-position: right center;
+  justify-self: flex-end;
+
+  font-size: 14px;
+  color: var(--text);
+  background-color: var(--card);
+
+  border: 0;
+  appearance: none;
+  cursor: pointer;
+}
+
+/* TODO: style select options
+
+/** Main header **/
+header .main-header {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-header h1 {
+  font-size: 24px;
+  color: var(--text2);
+  letter-spacing: 0.72px;
+  font-family: 'Inter', sans-serif;
+}
+
+.main-header ul {
+  display: flex;
+  gap: 3rem;
+  list-style: none;
+}
+
+.header-menu__item {
+  font-size: 16px;
+  color: var(--text2);
+  cursor: pointer;
+}
+
+.header__account {
+  display: flex;
+  align-items: center;
+}
+
+.header__search {
+  display: flex;
+  align-items: center;
+}
+
+.header__search input {
+  font-size: 12px;
+  color: var(--text2);
+  background-color: var(--secondary);
+  border-radius: 4px;
+
+  border: 0;
+  padding: 7px 12px 7px 20px;
 }
 
 /*^ Buttons */
@@ -58,6 +160,11 @@ button:hover {
 
 /** Category items styles **/
 
+.categories {
+  display: flex;
+  gap: 30px;
+}
+
 .category-item {
   width: 170px;
   height: 145px;
@@ -73,8 +180,9 @@ button:hover {
 .category-item .category {
   font-size: 1rem;
   color: var(--text2);
-  line-height: 150%;
 }
+
+/** Category items hover **/
 
 .category-item:hover {
   border: 0;

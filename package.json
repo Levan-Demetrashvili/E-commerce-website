@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "run": "babel-node ./src/script.js"
+    "test": "babel-node ./src/script.js"
   },
   "lint": "eslint  ./src",
   "author": "levan (tankistttt)",
