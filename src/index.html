@@ -40,10 +40,78 @@
             <input class="header__search-input" type="search" id="search" placeholder="What are you looking for?" />
             <label class="header__search-label" for="search"><img src="./assets/icons/search.svg" alt="search icon" /></label>
           </div>
-          <img class="header__wishlist" src="./assets/icons/Wishlist.svg" alt="wishlist icon" />
-          <img class="header__cart" src="./assets/icons/Cart1.svg" alt="cart icon" />
+          <!--... Wishlist cart and account  -->
+          <div class="header__account-buttons">
+            <button id="wishlist" class="wishlist-btn">
+              <img class="header__wishlist" src="./assets/icons/Wishlist.svg" alt="wishlist-icon" />
+            </button>
+
+            <button id="cart" class="cart-btn">
+              <img class="header__cart" src="./assets/icons/Cart1.svg" alt="cart-icon" />
+            </button>
+          </div>
         </div>
       </div>
     </header>
+
+    <footer>
+      <div class="footer__rows">
+        <div class="footer__row footer__row-sub">
+          <h1>Exclusive</h1>
+          <h4 class="footer__row-title">Subscribe</h4>
+          <p class="footer__row-text">Get 10% off your first order</p>
+          <form method="post" id="footer__form">
+            <label for="footer__form-email">
+              <input type="email" id="footer__form-email" placeholder="Enter your email" />
+              <img class="footer_form-icon" src="./assets/icons/send.svg" alt="send-icon" />
+            </label>
+          </form>
+        </div>
+        <div class="footer__row footer__row-support">
+          <h4 class="footer__row-title">Support</h4>
+          <p class="footer__row-text">111 Bijoy sarani, Dhaka, DH 1515, Bangladesh.</p>
+          <a id="email-link" href="mailto:exclusive@gmail.com" class="footer__row-link">exclusive@gmail.com</a>
+          <p class="footer__row-text">+88015-88888-9999</p>
+        </div>
+        <div class="footer__row footer__row-account">
+          <h4 class="footer__row-title">Account</h4>
+          <a id="my-acc-link" href="#" class="footer__row-link">My Account</a>
+          <a id="sign-in-link" href="#" class="footer__row-link">Login / Register</a>
+          <a id="cart-link" href="#" class="footer__row-link">Cart</a>
+          <a id="wishlist-link" href="#" class="footer__row-link">Wishlist</a>
+          <a id="shop-link" href="#" class="footer__row-link">Shop</a>
+        </div>
+        <div class="footer__row footer__row-links">
+          <h4 class="footer__row-title">Quick Link</h4>
+          <a href="#" class="footer__row-link">Privacy Policy</a>
+          <a href="#" class="footer__row-link">Terms Of Use</a>
+          <a href="#" class="footer__row-link">FAQ</a>
+          <a href="#" class="footer__row-link">Contact</a>
+        </div>
+        <div class="footer__row footer__row-download">
+          <h4 class="footer__row-title">Download App</h4>
+          <small>Save $3 with App New User Only</small>
+          <div class="row__download-container">
+            <img class="footer__row-qrcode" src="./assets/img/Qrcode 1.png" alt="qr-code" />
+            <div class="download__wrapper">
+              <img class="footer__download-play-store" src="./assets/img/Google_Play_Store_badge.svg" alt="play-store" />
+              <img class="footer__download-app-store" src="./assets/img/app-store-logo.svg" alt="app-store" />
+            </div>
+          </div>
+          <div class="footer__row-socials">
+            <img class="footer-facebook" src="./assets/icons/socials/Icon-Facebook.svg" alt="facebook icon" />
+            <img class="footer-twitter" src="./assets/icons/socials/twitter.svg" alt="twitter icon" />
+            <img class="footer-instagram" src="./assets/icons/socials/instagram.svg" alt="instagram icon" />
+            <img class="footer-linkedin" src="./assets/icons/socials/linkedin.svg" alt="linkedin icon" />
+          </div>
+        </div>
+      </div>
+      <span class="footer__copyright"> <img src="./assets/icons/copyright.svg" alt="copyright-symbol" /> Copyright 2024. All right reserved</span>
+    </footer>
   </body>
 </html>
+
+<!-- 24px -> h1 -- -->
+<!-- 36px -> h2 -- -->
+<!-- 48px -> h3 -- -->
+<!-- 20px -> h4 -- -->
