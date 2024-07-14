@@ -1,0 +1,125 @@
+/*^ Footer styles */
+footer {
+  width: 100%;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  background-color: var(--card);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 76px;
+  padding: 80px 0 24px;
+}
+
+footer .footer__rows {
+  display: flex;
+  justify-content: center;
+  gap: 87px;
+}
+
+.footer__row {
+  width: min-content;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+footer :is(h1, h4, p, a, small) {
+  color: var(--text);
+}
+footer h1 {
+  font: var(--heading24-b);
+  letter-spacing: 0.72px;
+  margin-bottom: 8px;
+}
+
+footer h4 {
+  font: var(--title20-md);
+  white-space: nowrap;
+  margin-bottom: 8px;
+}
+
+footer :is(p, span, a) {
+  font: var(--title16-r);
+}
+
+footer a {
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+footer small {
+  font: var(--title12-md);
+  opacity: 0.7;
+}
+
+footer span {
+  color: #444444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+.row__download-container {
+  display: flex;
+  gap: 8px;
+  margin-block: -8px 8px;
+}
+
+.row__download-container .download__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.download__wrapper img {
+  width: 110px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.download__wrapper .footer__download-play-store {
+  margin: 5px 3px 0 0;
+}
+
+.footer__row .footer__row-socials {
+  display: flex;
+  gap: 24px;
+}
+
+.footer__row .footer__row-socials img {
+  cursor: pointer;
+}
+
+.footer__row .footer__row-socials img:hover {
+  filter: invert(77%) sepia(70%) saturate(604%) hue-rotate(357deg) brightness(99%) contrast(105%);
+}
+
+/** Footer form styles **/
+
+footer form label {
+  display: flex;
+  gap: 34px;
+  padding: 12px 12px 12px 16px;
+
+  border: 1.5px solid var(--text);
+  border-radius: 4px;
+}
+
+footer form label img:hover {
+  cursor: pointer;
+  filter: invert(43%) sepia(86%) saturate(1623%) hue-rotate(185deg) brightness(100%) contrast(91%);
+}
+
+footer input#footer__form-email {
+  max-width: 130px;
+  background-color: transparent;
+  font: var(--title16-r);
+  border: 0;
+}
+
+footer input#footer__form-email::placeholder {
+  color: var(--text);
+  opacity: 0.4;
+}

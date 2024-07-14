@@ -1,0 +1,137 @@
+/** Top Header */
+
+.top-header-mask {
+  padding: 12px 0;
+  width: 100%;
+  background-color: var(--card);
+}
+
+header .top-header {
+  width: 859px;
+  margin-left: calc(100% - 859px - 136px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-header .sale-text {
+  font: var(--title14-r);
+  color: var(--text);
+}
+
+.sale-text a {
+  margin-left: 8px;
+  color: var(--text);
+  font: var(--title14-sb);
+  line-height: 171.429%;
+}
+
+.top-header select {
+  width: 78px;
+  background-image: url('../../../public/assets/icons/DropDown.svg');
+  background-repeat: no-repeat;
+  background-position: right center;
+  justify-self: flex-end;
+
+  font: var(--title14-r);
+  color: var(--text);
+  background-color: var(--card);
+
+  border: 0;
+  appearance: none;
+  cursor: pointer;
+}
+
+/** Main header **/
+header .main-header {
+  margin: 40px 0 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-header h1 {
+  font: var(--heading24-b);
+  color: var(--text2);
+  letter-spacing: 0.72px;
+}
+
+.main-header ul {
+  display: flex;
+  gap: 3rem;
+  list-style: none;
+}
+
+.header-menu__item {
+  position: relative;
+  font: var(--title16-r);
+  color: var(--text2);
+  cursor: pointer;
+}
+
+.header-menu__item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  width: 0;
+  height: 1px;
+  background-color: #000;
+  opacity: 0.5;
+  transition: width 0.5s ease-in-out;
+}
+
+.header-menu__item:hover::before {
+  width: 100%;
+}
+
+.header__account {
+  display: flex;
+  align-items: center;
+}
+
+.header__search {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.header__search input {
+  width: 243px;
+  height: 38px;
+  font: var(--title12-r);
+  color: var(--text2);
+  background-color: var(--secondary);
+  border-radius: 4px;
+
+  border: 0;
+  padding: 7px 12px 7px 20px;
+}
+
+.header__search-label {
+  position: absolute;
+  top: 7px;
+  right: 12px;
+  display: flex;
+  align-items: center;
+}
+.header__account-buttons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-left: 24px;
+}
+
+.header__account-buttons button {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+header hr {
+  opacity: 0.3;
+  border: 1px solid #000;
+}

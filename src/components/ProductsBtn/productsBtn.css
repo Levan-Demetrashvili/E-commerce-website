@@ -1,0 +1,24 @@
+.products-btn {
+  font: var(--title16-md);
+  color: var(--text);
+  background-color: var(--button2);
+  border-radius: 4px;
+  border: 0;
+
+  padding: 16px 3rem;
+  cursor: pointer;
+}
+
+.products-btn.transparent {
+  color: var(--text2);
+  background-color: var(--primary);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.products-btn:hover {
+  background-color: var(--Hover-Button);
+}
+
+.products-btn.transparent:hover {
+  color: var(--text1);
+}

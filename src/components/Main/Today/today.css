@@ -1,0 +1,9 @@
+.section__today {
+  margin-top: 150px;
+  overflow: hidden;
+}
+
+.section__today .products-btn {
+  display: block;
+  margin: 60px auto;
+}

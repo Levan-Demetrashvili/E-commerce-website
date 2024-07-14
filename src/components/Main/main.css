@@ -1,0 +1,51 @@
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.section-header .section__header-red-box {
+  width: 20px;
+  height: 40px;
+  background-color: var(--secondary2);
+  border-radius: 4px;
+}
+
+.section-header p {
+  font: var(--title16-sb);
+  color: var(--secondary2);
+}
+
+.today-sales {
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+h2.section-title {
+  font: var(--heading36-sb);
+  letter-spacing: 1.44px;
+  line-height: 1;
+  margin-right: 65px;
+}
+
+/** Slider buttons */
+.today-sales .slider-btns {
+  display: flex;
+  gap: 8px;
+}
+
+.slider-btn {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background-color: #f5f5f5;
+
+  border: 0;
+  cursor: pointer;
+}
+
+.slider-btn:hover {
+  background-color: #0003;
+}

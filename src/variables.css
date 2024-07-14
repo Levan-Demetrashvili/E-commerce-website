@@ -1,0 +1,41 @@
+:root {
+  --BG: #fff;
+
+  --primary: #fff;
+  --primary1: #363738;
+
+  --secondary: #f5f5f5;
+  --secondary1: #fefaf1;
+  --secondary2: #db4444;
+
+  --text: #fafafa;
+  --text1: #7d8184;
+  --text2: #000;
+
+  --card: #000;
+  --button: #000;
+  --button1: #00ff66;
+  --button2: #db4444;
+
+  --Hover-Button: #e07575;
+  --Hover-Button1: #a0bce0;
+
+  --box-shadow20: 0px 2px 10px 2px rgba(0, 0, 0, 0.2);
+  --box-shadow5: box-shadow: 0px 1px 13px 0px rgba(0, 0, 0, 0.05);
+
+  --heading48-sb: normal normal 600 3rem/125% 'Inter';
+  --heading36-sb: normal normal 600 2.25rem/133.333% 'Inter';
+  --heading32-b: normal normal 700 2rem/93.75% 'Inter';
+  --heading24-sb: normal normal 600 1.5rem/100% 'Inter';
+  --heading24-b: normal normal 700 1.5rem/100% 'Inter';
+
+  --title20-md: normal normal 500 20px/140% 'Poppins';
+  --title20-sb: normal normal 600 20px/140% 'Poppins';
+  --title16-r: normal normal 400 16px/150% 'Poppins';
+  --title16-md: normal normal 500 16px/150% 'Poppins';
+  --title16-sb: normal normal 600 16px/125% 'Poppins';
+  --title14-r: normal normal 400 14px/150% 'Poppins';
+  --title14-sb: normal normal 600 14px/150% 'Poppins';
+  --title12-r: normal normal 400 12px/150% 'Poppins';
+  --title12-md: normal normal 500 12px/150% 'Poppins';
+}

@@ -1,0 +1,35 @@
+.countdown {
+  max-width: 600px;
+  display: flex;
+  align-items: flex-end;
+  gap: 17px;
+}
+
+.countdown span {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.countdown span small {
+  font: var(--title12-md);
+}
+
+.countdown span p {
+  font: var(--heading32-b);
+  letter-spacing: 1.28px;
+}
+
+.countdown .circles {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.countdown .circles .countdown-circle {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: var(--Hover-Button);
+}

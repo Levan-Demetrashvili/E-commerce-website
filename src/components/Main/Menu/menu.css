@@ -1,0 +1,108 @@
+main {
+  margin-block: 40px 140px;
+  overflow-x: hidden;
+}
+
+#section-1 {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+#section-1 nav.section__1-category-menu {
+  position: relative;
+}
+
+.section__1-category-menu ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.section__1-category-menu li {
+  width: 217px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section__1-category-menu li:has(img) {
+  cursor: pointer;
+}
+
+.section__1-category-menu a {
+  text-decoration: none;
+  color: var(--text2);
+  font: var(--title16-r);
+}
+
+#section-1 nav li img {
+  transform: rotate(-90deg);
+}
+
+#section-1 hr {
+  position: absolute;
+  top: -40px;
+  right: -16px;
+  height: calc(100% + 40px);
+  border: 0.5px solid #000;
+  opacity: 0.3;
+  transform-origin: left bottom;
+}
+
+.ads-container {
+  display: flex;
+  background-color: #000;
+  margin-left: 45px;
+  padding-bottom: 16px;
+  overflow: hidden;
+}
+
+.ads-container .ads-text {
+  margin: 58px 0 0 64px;
+  color: var(--text);
+}
+
+.ads-text .text__iphone {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.text__iphone p {
+  font: var(--title16-r);
+}
+
+.ads-text h3 {
+  margin-top: 20px;
+  font: var(--heading48-sb);
+  letter-spacing: 1.92px;
+  white-space: nowrap;
+}
+
+.ads-text a {
+  position: relative;
+  display: inline-flex;
+  gap: 8px;
+  margin: 22px 0 0 3px;
+  text-decoration: none;
+
+  font: var(--title16-md);
+  color: var(--text);
+}
+
+.ads-text a::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 1px;
+  background-color: var(--text);
+  transition: width 0.5s ease-in-out;
+}
+
+.ads-text a:hover::before {
+  width: 70%;
+}
